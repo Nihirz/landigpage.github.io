@@ -1,0 +1,82 @@
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Landing Page</title>
+		<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+		<script type="text/javascript" src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+		<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<nav id="nav-bar">
+				<li><a class="nav-link" href="#home"><i class="fas fa-beer"></i></a></li>
+				<li><a class="nav-link" href="#product">Product</a></li>
+				<li><a class="nav-link" href="#contact">Contact</a></li>
+			</nav>
+			<img id="header-img" src="" alt="" />
+		</header>	
+
+		<iframe id="video" src="" frameborder="0"></iframe>
+		<form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+			<input type="email" name="email" id="email" placeholder="Email" required />
+			<input type="submit" name="submit" id="submit" value="submit" />
+		</form>
+		<section id="home">
+			<h2>Home</h2>	
+		</section>
+		<section id="product">
+			<h2>Product</h2>	
+		</section>
+		<section id="contact">
+			<h2>Contact</h2>
+		</section>
+	</body>
+	<style type="text/css">
+	.body {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	background: black;
+	border-bottom: 2px solid #ccc;
+	padding: 25px 5%;
+	color: white;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around
+}
+
+.section {
+	height: 1000px;
+}
+
+.section#home {
+	background: pink;
+}
+
+.section#product {
+	background: teal;
+}
+
+.section#contact {
+	background: orange;
+}
+
+@media screen and (max-width: 480px) {
+	.body {
+		background: blue;
+	}
+}
+	</style>
+</html>
